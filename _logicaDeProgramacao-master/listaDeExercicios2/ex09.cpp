@@ -9,8 +9,17 @@
 int main()
 {
 
-    float c, a, l, caixa, qCaixa;
-    printf("Informe o valor de comprimento: \n");
+    float c, l, a, aParede, qCaixas;
+    printf("Digite o Comprimento: ");
+    scanf("%f", &c);
+    printf("Digite a Largura: ");
+    scanf("%f", &l);
+    printf("Digite a Altura: ");
+    scanf("%f", &a);
+
+    aParede = 2 * a * (c + l);
+    qCaixas = aParede / 1.5;
+    printf("A quantidade de caixas e: %.3f", qCaixas);
 
     return 0;
 }
